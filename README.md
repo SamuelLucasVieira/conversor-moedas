@@ -113,13 +113,6 @@ O frontend estará rodando em **http://localhost:3000/**.
 
 ---
 
-## 💎 Licença
-
-Este projeto é open-source e pode ser utilizado para estudos e melhorias.  
-Sinta-se à vontade para contribuir! 🚀
-
----
-
 ## 📌 Contato
 
 Se tiver dúvidas ou sugestões, entre em contato:
