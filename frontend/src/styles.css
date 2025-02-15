@@ -1,64 +1,198 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo do site */
+body, html {
+  background: linear-gradient(#4facfe, #00c6ff);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.card {
-  background: white;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
 }
 
+/* Container principal */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+/* Título */
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Campo de entrada de valor */
 .input-field {
   width: 100%;
-  padding: 8px;
+  padding: 12px;
   margin: 10px 0;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
 }
 
+/* Layout dos selects */
 .select-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 0;
 }
 
+/* Estilizando os selects */
 .select-box {
-  padding: 5px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  background: white;
+  cursor: pointer;
 }
 
+/* Ícone de troca de moeda */
+.arrow {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+/* Botão de conversão */
 .btn {
   width: 100%;
   background-color: #007bff;
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.error {
-  color: red;
+.btn:hover {
+  background-color: #0056b3;
 }
 
+/* Estilização do resultado */
 .converted-text {
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 18px;
   font-weight: bold;
   color: green;
+}
+
+/* ------------------ Responsividade ------------------ */
+
+/* Celulares pequenos (até 380px) */
+@media (max-width: 380px) {
+  .container {
+    padding: 15px;
+    max-width: 100vw;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .input-field,
+  .select-box {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Celulares médios (até 600px) */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100vw;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 80vw;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+/* Telas grandes (mais de 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 500px;
+    padding: 50px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .input-field,
+  .select-box {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+/* Telas muito grandes (mais de 3000px) */
+@media (min-width: 3000px) {
+  .container {
+    max-width: 100vw; /* Evita que o contêiner cresça muito */
+    padding: 200px;
+    border-radius: 100px;
+  }
+  h1 {
+    font-size: 200px;
+  }
+  .input-field,
+  .select-box {
+    font-size: 100px;
+    padding: 40px;
+  }
+  .btn {
+    font-size: 100px;
+    padding: 40px;
+  }
 }
