@@ -125,7 +125,7 @@ Sinta-se à vontade para contribuir! 🚀
 Se tiver dúvidas ou sugestões, entre em contato:
 
 📧 **Email:** samuellucasvieira.melo@gmail.com
-🔗 **GitHub:** [seu-usuario](https://github.com/SamuelLucasVieira)  
+🔗 **GitHub:** [SamuelLucasVieira](https://github.com/SamuelLucasVieira)  
 
 ---
 🎉 **Agora você pode executar o projeto e começar a converter moedas!** 💰🚀
