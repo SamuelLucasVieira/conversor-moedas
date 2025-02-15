@@ -7,7 +7,7 @@ export default function Home() {
     useCurrencyConverter();
 
   return (
-    <div>
+    <div className="card">
       <h1>Conversor de Moedas 💰</h1>
 
       <CurrencyInput

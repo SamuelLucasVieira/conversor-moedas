@@ -1,13 +1,16 @@
 interface Props {
     converted: string | null;
-}
-
-export default function ResultDisplay({ converted }: Props) {
-    console.log("Valor convertido recebido:", converted); // Teste para depuração
-
+  }
+  
+  export default function ResultDisplay({ converted }: Props) {
     return (
-        <>
-            {converted && <p className="text-green-500">Valor Convertido: {converted}</p>}
-        </>
+      <>
+        {converted && (
+          <p className="converted-text">
+            💸 Valor Convertido: {converted}
+          </p>
+        )}
+      </>
     );
-}
+  }
+  

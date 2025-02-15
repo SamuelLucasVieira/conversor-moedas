@@ -1,91 +1,64 @@
-/* Reset básico para remover margens e paddings padrões */
-* {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Fundo mais agradável */
-body {
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-/* Container principal */
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
   background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 350px;
+  width: 300px;
 }
 
-/* Título */
-h1 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* Campos de input */
 .input-field {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   margin: 10px 0;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  text-align: center;
+  border-radius: 5px;
 }
 
-/* Área de seleção de moeda */
 .select-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
 }
 
-/* Estilizando os selects */
 .select-box {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  text-align: center;
-  background: white;
-  cursor: pointer;
+  padding: 5px;
 }
 
-/* Botão */
 .btn {
   width: 100%;
   background-color: #007bff;
   color: white;
-  padding: 12px;
+  padding: 10px;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+.error {
+  color: red;
 }
 
-/* Estilização do resultado */
 .converted-text {
-  margin-top: 15px;
-  font-size: 18px;
+  margin-top: 10px;
   font-weight: bold;
   color: green;
 }
